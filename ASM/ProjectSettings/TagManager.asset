@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - gach
+  - nendat
+  - coin
+  - Mushroom
+  - Text
+  - door
   layers:
   - Default
   - TransparentFX
