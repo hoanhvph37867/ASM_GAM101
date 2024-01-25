@@ -12,6 +12,9 @@ public class Player_Move : MonoBehaviour
     public Text txtScore;
     //-----
 
+int hp = 3;
+public  Text txtHP;
+
     public static bool isGameOver = false;
     public float speedX, speedY; //Tốc độ theo trục x, y
     private Animator animator;
@@ -33,6 +36,17 @@ public class Player_Move : MonoBehaviour
             score--; //trừ điểm
             Destroy(collision.gameObject); //hủy coin
             txtScore.text = "Score: " + score.ToString();
+            if (score <= 0)
+            {
+                Application.LoadLevel("Menu");
+            }
+
+        }
+        if (collision.gameObject.tag == "CNV")
+        {
+            hp--; //trừ điểm
+            Destroy(collision.gameObject); //hủy coin
+            txtHP.text = "HP: " + hp.ToString();
             if (score <= 0)
             {
                 Application.LoadLevel("Menu");
@@ -78,6 +92,7 @@ public class Player_Move : MonoBehaviour
     {
 
         txtScore = GameObject.Find("txtDiem").GetComponent<Text>(); //ánh xạ
+        txtHP = GameObject.Find("txtHP").GetComponent<Text>(); //ánh xạ
 
         // rigibody2d = this.gameObject.GetComponent<Rigibody2D>();
         // transform = this.gameObject.GetComponent<Transform>();

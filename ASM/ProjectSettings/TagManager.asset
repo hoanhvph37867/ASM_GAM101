@@ -10,6 +10,7 @@ TagManager:
   - Mushroom
   - Text
   - door
+  - CNV
   layers:
   - Default
   - TransparentFX
