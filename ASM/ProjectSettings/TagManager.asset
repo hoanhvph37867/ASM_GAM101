@@ -11,6 +11,12 @@ TagManager:
   - Text
   - door
   - CNV
+  - apple
+  - fruits
+  - checkpoint
+  - obstacles
+  - text
+  - checkwin
   layers:
   - Default
   - TransparentFX

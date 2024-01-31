@@ -12,8 +12,8 @@ public class Player_Move : MonoBehaviour
     public Text txtScore;
     //-----
 
-int hp = 3;
-public  Text txtHP;
+    int hp = 3;
+    public  Text txtHP;
 
     public static bool isGameOver = false;
     public float speedX, speedY; //Tốc độ theo trục x, y
